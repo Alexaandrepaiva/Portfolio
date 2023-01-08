@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelectorAll('.main-content');
+const allSections = document.querySelector('.main-content');
 
 function PageTransitions(){
     // Buttoon click active class
@@ -24,7 +24,7 @@ function PageTransitions(){
             e.target.classList.add('active')
 
             //hide other sections
-            sections.forEach((sections) => {
+            sections.forEach((section) => {
                 section.classList.remove('active')
             })
 

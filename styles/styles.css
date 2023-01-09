@@ -320,24 +320,24 @@ section {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .html, .about-stats .progress-bars .progress-bar .progress-con .progress .css, .about-stats .progress-bars .progress-bar .progress-con .progress .js, .about-stats .progress-bars .progress-bar .progress-con .progress .next {
+.about-stats .progress-bars .progress-bar .progress-con .progress .html, .about-stats .progress-bars .progress-bar .progress-con .progress .css, .about-stats .progress-bars .progress-bar .progress-con .progress .js, .about-stats .progress-bars .progress-bar .progress-con .progress .next, .about-stats .progress-bars .progress-bar .progress-con .progress .react, .about-stats .progress-bars .progress-bar .progress-con .progress .rn {
   width: 95%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .tailwind, .about-stats .progress-bars .progress-bar .progress-con .progress .sass, .about-stats .progress-bars .progress-bar .progress-con .progress .node, .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 80%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .firebase, .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+.about-stats .progress-bars .progress-bar .progress-con .progress .c, .about-stats .progress-bars .progress-bar .progress-con .progress .cplus, .about-stats .progress-bars .progress-bar .progress-con .progress .redux, .about-stats .progress-bars .progress-bar .progress-con .progress .firebase, .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
   width: 65%;
 }
 
-.stat-tile {
+.stat-title {
   text-transform: uppercase;
   font-size: 2.5rem;
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
 }
-.stat-tile::before {
+.stat-title::before {
   content: "";
   left: 50%;
   top: 0%;

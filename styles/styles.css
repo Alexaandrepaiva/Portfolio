@@ -300,7 +300,6 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
   align-items: center;
-  position: relative;
 }
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
   color: var(--color-grey);
@@ -311,14 +310,16 @@ section {
   height: 0.45rem;
   background-color: var(--color-grey);
   margin-left: 1rem;
+  position: relative;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   height: 100%;
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html, .about-stats .progress-bars .progress-bar .progress-con .progress .css, .about-stats .progress-bars .progress-bar .progress-con .progress .js, .about-stats .progress-bars .progress-bar .progress-con .progress .next, .about-stats .progress-bars .progress-bar .progress-con .progress .react, .about-stats .progress-bars .progress-bar .progress-con .progress .rn {
   width: 95%;
@@ -420,7 +421,7 @@ section {
   position: relative;
   border: 1px solid var(--color-tertiary);
   display: flex;
-  align-self: center;
+  align-self: flex-start;
   align-items: center;
   overflow: hidden;
 }
@@ -441,7 +442,7 @@ section {
   top: 0;
   right: 0;
   transform: translateX(100%);
-  transition: all 0.4s ease-out;
+  transition: all 0.4s ease-in-out;
   z-index: -1;
 }
 .main-btn:hover::before {
@@ -470,7 +471,7 @@ section {
   top: 50%;
   left: 50%;
   color: var(--color-grey-blue);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-out;
   z-index: -1;
   transform: translate(-50%, -55%);
   letter-spacing: 10px;

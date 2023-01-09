@@ -299,7 +299,6 @@ section {
             .progress-con{
                 display: flex;
                 align-items: center;
-                position: relative;
                 .prog-text{
                     color: var(--color-grey);
                     width: 6rem;
@@ -309,13 +308,15 @@ section {
                     height: .45rem;
                     background-color: var(--color-grey);
                     margin-left: 1rem;
+                    position: relative;
                     span {
                         position: absolute;
-                        left: 0;
                         top: 0;
+                        left: 0;
                         height: 100%;
                         background-color: var(--color-secondary);
                         transition: all .4s ease-in-out;
+                        width: 60%;
                     }
                     .html, .css, .js, .next, .react, .rn{
                         width: 95%;
@@ -420,7 +421,7 @@ section {
     position: relative;
     border: 1px solid var(--color-tertiary);
     display: flex;
-    align-self: center;
+    align-self: flex-start;
     align-items: center;
     overflow: hidden;
     .btn-text{
@@ -440,7 +441,7 @@ section {
         top: 0;
         right: 0;
         transform: translateX(100%);
-        transition: all .4s ease-out;
+        transition: all .4s ease-in-out;
         z-index: -1;
     }
     &:hover{
@@ -470,7 +471,7 @@ section {
             top: 50%;
             left: 50%;
             color: var(--color-grey-blue);
-            transition: all .4s ease-in-out;
+            transition: all .4s ease-out;
             z-index: -1;
             transform: translate(-50%, -55%);
             letter-spacing: 10px;

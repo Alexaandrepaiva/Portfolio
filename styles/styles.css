@@ -96,13 +96,12 @@ a {
 }
 
 header {
-  height: 100vh;
   color: var(--color-header);
   overflow: hidden;
 }
 
 section {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   position: absolute;
   left: 0;
@@ -222,7 +221,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  min-height: 100vh;
 }
 .header-content .left-header {
   display: flex;
@@ -246,7 +245,6 @@ section {
   height: 90%;
   width: 68%;
   margin-left: 4rem;
-  background-color: var(--color-grey);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -724,7 +722,20 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
   header {
+    padding: 0 !important;
+    min-height: 100vh;
+  }
+  section {
     padding: 0 !important;
   }
   .theme-btn {
@@ -734,6 +745,10 @@ section {
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
+    min-height: 100vh !important;
+  }
+  .left-header {
+    min-height: 100vh !important;
   }
   .left-header .h-shape {
     display: none;
@@ -749,6 +764,12 @@ section {
     text-align: center;
     padding-top: 3rem;
   }
+  .right-header h2 {
+    align-self: center;
+  }
+  .right-header p {
+    align-self: justify;
+  }
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
@@ -761,7 +782,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    background-color: var(--color-grey-5);
+    background-color: var(--color-primary);
   }
   .controls .control {
     margin: 1rem 0.3rem;
@@ -865,6 +886,16 @@ section {
   }
 }
 @media screen and (max-width: 1250px) {
+  section {
+    padding: 2rem 5rem !important;
+  }
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 10rem;
+    letter-spacing: 2px;
+  }
   .blogs {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
@@ -892,16 +923,19 @@ section {
     padding-top: 2.5rem;
   }
   .main-title h2 {
-    font-size: 4rem;
+    font-size: 2.7rem;
   }
   .main-title h2 span {
-    font-size: 4rem;
+    font-size: 2.7rem;
   }
   .main-title h2 .bg-text {
-    font-size: 4.5rem;
+    font-size: 9rem;
   }
 }
 @media screen and (max-width: 970px) {
+  section {
+    padding: 2rem 3rem !important;
+  }
   .container {
     padding: 7rem 6rem;
   }
@@ -930,6 +964,12 @@ section {
     text-align: center;
     padding-top: 3rem;
   }
+  .right-header h2 {
+    align-self: center;
+  }
+  .right-header p {
+    align-self: justify;
+  }
 }
 @media screen and (max-width: 700px) {
   .container {
@@ -945,12 +985,13 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
   .main-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-title h2 span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-title h2 .bg-text {
-    font-size: 4rem;
+    width: 100%;
+    font-size: 8rem;
   }
 }/*# sourceMappingURL=styles.css.map */

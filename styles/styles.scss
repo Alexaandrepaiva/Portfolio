@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-  }
+}
 
 a {
     display: inline-block;
@@ -94,13 +94,12 @@ a {
 }
 
 header {
-    height: 100vh;
     color: var(--color-header);
     overflow: hidden;
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     left: 0;
@@ -215,7 +214,7 @@ section {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    min-height: 100vh;
 
     .left-header {
         display: flex;
@@ -238,9 +237,7 @@ section {
             height: 90%;
             width: 68%;
             margin-left: 4rem;
-            background-color: var(--color-grey);
             transition: all .4s ease-in-out;
-
             img {
                 width: 100%;
                 height: 100%;

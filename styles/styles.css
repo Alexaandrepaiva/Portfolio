@@ -287,7 +287,11 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  max-height: 400px;
+}
+@media screen and (min-width: 768px) {
+  .about-container .right-about {
+    max-height: 400px;
+  }
 }
 .about-container .right-about .about-item {
   border: 1.5px solid var(--color-secondary);

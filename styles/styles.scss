@@ -284,6 +284,7 @@ section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
+        max-height: 400px;
         .about-item{
             border: 1.5px solid var(--color-secondary);
             border-radius: 5px;
@@ -332,6 +333,7 @@ section {
             padding: 1rem;
             color: var(--color-grey);
             margin-bottom: 2rem;
+            text-align: justify;
         }
         h4{
             font-size: 2.5rem;
@@ -553,8 +555,9 @@ section {
         flex: 2;
         h4{
             margin-top: 1rem;
-            font-size: 2re;
+            font-size: 2rem;
             text-transform: uppercase;
+            font-weight: 700;
         }
         p{
             margin: 1rem 0;

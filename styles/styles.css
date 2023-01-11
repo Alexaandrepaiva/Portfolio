@@ -287,6 +287,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  max-height: 400px;
 }
 .about-container .right-about .about-item {
   border: 1.5px solid var(--color-secondary);
@@ -335,6 +336,7 @@ section {
   padding: 1rem;
   color: var(--color-grey);
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .about-container .left-about h4 {
   font-size: 2.5rem;
@@ -559,8 +561,9 @@ section {
 }
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
-  font-size: 2re;
+  font-size: 2rem;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .contact-content-con .left-contact p {
   margin: 1rem 0;

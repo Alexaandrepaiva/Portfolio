@@ -9,6 +9,7 @@
     }
     /* Hide scrollbar for IE, Edge and Firefox */
     body {
+        font-size: 1rem;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
@@ -42,12 +43,14 @@
         width: 90%;
         margin: 0 auto;
         .name{
-            font-size: 2.5rem !important;
+            font-size: 2rem !important;
             text-align: center;
             padding-top: 3rem;
         }
         h2{
             align-self: center;
+            font-size: 1.4rem;
+            padding-top: .4rem;
         }
         p{
             align-self: justify;
@@ -78,17 +81,37 @@
             grid-template-columns: repeat(1, 1fr);
             padding-top: 2.5rem;
         }
+        .about-item .abt-text .large-text{
+            font-size: 1rem;
+        }
         .left-about{
             padding-right: 0;
             p{
                 padding-left: 0;
             }
+            h4{
+                font-size: 1.5rem;
+            }
         }
+    }
+
+    .about-stats h4{
+        font-size: 1.5rem;
+    }
+
+    .about h4{
+        font-size: 1.5rem;
     }
 
     .timeline{
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 6rem;
+        .timeline-item h5{
+            font-size: 1.2rem;
+        }
+        .timeline-item h5 span{
+            font-size: 1.1rem;
+        }
     }
 
     .container{
@@ -151,12 +174,6 @@
     .main-title{
         h2{
             font-size: 2rem;
-            span{
-                font-size: 2.3rem;
-            }
-            .bg-text{
-                font-size: 2.3rem;
-            }
         }
     }
 }
@@ -318,8 +335,8 @@
                 font-size: 2rem;
             }
             .bg-text{
-                width: 100%;
-                font-size: 8rem;
+                width: 110%;
+                font-size: 7.4rem;
             }
         }
     }

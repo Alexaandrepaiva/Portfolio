@@ -728,6 +728,7 @@ section {
   }
   /* Hide scrollbar for IE, Edge and Firefox */
   body {
+    font-size: 1rem;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
@@ -760,12 +761,14 @@ section {
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     text-align: center;
     padding-top: 3rem;
   }
   .right-header h2 {
     align-self: center;
+    font-size: 1.4rem;
+    padding-top: 0.4rem;
   }
   .right-header p {
     align-self: justify;
@@ -794,15 +797,33 @@ section {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 2.5rem;
   }
+  .about-container .about-item .abt-text .large-text {
+    font-size: 1rem;
+  }
   .about-container .left-about {
     padding-right: 0;
   }
   .about-container .left-about p {
     padding-left: 0;
   }
+  .about-container .left-about h4 {
+    font-size: 1.5rem;
+  }
+  .about-stats h4 {
+    font-size: 1.5rem;
+  }
+  .about h4 {
+    font-size: 1.5rem;
+  }
   .timeline {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
+  }
+  .timeline .timeline-item h5 {
+    font-size: 1.2rem;
+  }
+  .timeline .timeline-item h5 span {
+    font-size: 1.1rem;
   }
   .container {
     padding: 2rem 2.5rem !important;
@@ -852,12 +873,6 @@ section {
   }
   .main-title h2 {
     font-size: 2rem;
-  }
-  .main-title h2 span {
-    font-size: 2.3rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 2.3rem;
   }
 }
 @media screen and (max-width: 1432px) {
@@ -991,7 +1006,7 @@ section {
     font-size: 2rem;
   }
   .main-title h2 .bg-text {
-    width: 100%;
-    font-size: 8rem;
+    width: 110%;
+    font-size: 7.4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
